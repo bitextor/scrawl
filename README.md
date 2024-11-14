@@ -25,6 +25,12 @@ $ poetry update && poetry build
 $ pip install dist/*.whl
 $ playwright install
 ```
+## Example
+
+```bash
+$ scrawl crawl en,es https://mydomain.here output_directory
+```
+
 
 **Acknowledgments**
 
