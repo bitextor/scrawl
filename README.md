@@ -1,6 +1,7 @@
 # Scrawl
 
 Scrawl is a playwright-based web crawler. It crawls the web using Playwright and real web browsers.
+
 ```
 Usage:
   scrawl crawl [options] <locale_list> <url_list> <working_directory>
@@ -20,7 +21,14 @@ Options:
 
 ## Installation
 
+This is the whole process, including the creation of the virtual environment for Python. It requires python 10+.
+
 ```bash
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install poetry
+$ git clone https://github.com/bitextor/scrawl.git
+$ cd scrawl
 $ poetry update && poetry build
 $ pip install dist/*.whl
 $ playwright install
